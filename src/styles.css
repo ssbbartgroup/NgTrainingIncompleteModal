@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+/* BEGIN a11y techniques */
+
+
+
+[aria-hidden="true"] { opacity: 0.5; }
+
+
+.offscreenText {
+position: absolute;
+clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+clip: rect(1px, 1px, 1px, 1px);
+clip-path: inset(50%);
+padding: 0;
+border: 0;
+height: 1px; 
+width: 1px; 
+overflow: hidden;
+white-space: nowrap;
+}
+
+/* END a11y techniques */
+
+
+/* BEGIN Modal */
+.a11y-modal {
+    padding:20px;
+    display:block;
+    position: fixed;
+    top:50px;
+    left: 0;
+    right: 0;
+    margin:auto;
+    background-color: #000;
+    color:#fff;
+    height:70%;
+    width: 55%;
+    border-radius: 2px;
+  }
+  /* END Modal */

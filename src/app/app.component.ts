@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  modalShouldBeVisible:boolean = false;
+  
+
+  showModal(e) { 
+    e.preventDefault();
+    this.modalShouldBeVisible = true; 
+  }
+
+  closeModal(){
+    this.modalShouldBeVisible = false;
+  }
 }
+
+
+
